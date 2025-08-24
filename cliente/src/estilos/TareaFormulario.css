@@ -1,0 +1,127 @@
+.tareaFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid green;
+    background-color: white;
+    width: 400px;
+    min-height: 300px;
+    padding: 20px;
+    max-width: 90vw;
+}
+
+.contenedor-formulario {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+}
+.h1crearTarea {
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.inputTarea {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+}
+.textarea {
+    min-height: 70px;
+}
+.contenedor-boton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CrearTareaboton {
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+}
+.error-message {
+    color: #e74c3c;
+}
+.input-error {
+    border: 2px solid #e74c3c !important;
+    background-color: #fdf2f2;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.inputTarea,.textarea:focus {
+    border: 2px solid #3498db;
+    outline: none;
+}
+
+/* Responsive Design para TareaFormulario */
+@media (max-width: 768px) {
+    .tareaFormulario {
+        width: 95%;
+        max-width: 500px;
+        padding: 15px;
+        min-height: 280px;
+    }
+    
+    .h1crearTarea {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .inputTarea {
+        height: 40px;
+        font-size: 16px; /* Evita zoom en iOS */
+    }
+    
+    .textarea {
+        min-height: 80px;
+        font-size: 16px;
+    }
+    
+    .CrearTareaboton {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tareaFormulario {
+        width: 98%;
+        padding: 10px;
+        min-height: 250px;
+    }
+    
+    .h1crearTarea {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    .contenedor-formulario {
+        gap: 20px;
+    }
+    
+    .inputTarea {
+        height: 45px;
+        padding: 12px;
+    }
+    
+    .textarea {
+        min-height: 90px;
+        padding: 12px;
+    }
+    
+    .CrearTareaboton {
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
+}

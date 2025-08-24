@@ -1,0 +1,184 @@
+.pagina-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    min-height: 400px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    max-width: 90vw;
+}
+
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+
+.h1registro {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+.inputform {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+}
+
+.inputEnviar {
+    /* width: 70%; */
+    cursor: pointer;
+}
+.errorp {
+    color: white;
+    background-color: red;
+    font-size: 12px;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+.error-container {
+    width: 100%;
+}
+
+
+
+/* Estilos para grupos de inputs con errores */
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Input con error */
+.input-error {
+    border: 2px solid #e74c3c !important;
+    background-color: #fdf2f2;
+}
+
+/* Mensaje de error de validación */
+.error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin: 0;
+    padding: 2px 5px;
+    background-color: transparent;
+    text-align: left;
+    width: 100%;
+    min-height: auto;
+}
+
+/* Input normal (sin error) */
+.inputform:focus {
+    border: 2px solid #3498db;
+    outline: none;
+}
+
+.yacuenta {
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.linkylogin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+Link {
+    color: black;
+}
+
+.iniciarsesion {
+    color: black;
+}
+
+.iniciarsesion:hover {
+    text-decoration: underline;
+    
+}/* R
+esponsive Design para PaginaRegistro */
+@media (max-width: 768px) {
+    .pagina-registro {
+        width: 95%;
+        max-width: 450px;
+        padding: 18px;
+        min-height: 380px;
+    }
+    
+    .h1registro {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .inputform {
+        height: 42px;
+        font-size: 16px; /* Evita zoom en iOS */
+    }
+    
+    .inputEnviar {
+        height: 42px;
+        font-size: 16px;
+    }
+    
+    .yacuenta {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagina-registro {
+        width: 98%;
+        padding: 15px;
+        min-height: 350px;
+    }
+    
+    .h1registro {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+    
+    .formulario-registro {
+        gap: 20px;
+    }
+    
+    .inputform {
+        height: 45px;
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .inputEnviar {
+        height: 45px;
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    .yacuenta {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .linkylogin {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

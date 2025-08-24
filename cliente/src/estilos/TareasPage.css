@@ -1,0 +1,46 @@
+.contenedor-general {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.tituloTareas {
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+}
+
+
+.contenedor-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    min-height: 50vh;
+}/* Respons
+ive Design para TareasPage */
+@media (max-width: 768px) {
+    .tituloTareas {
+        padding: 15px 10px 0 10px;
+        font-size: 1.8rem;
+    }
+    
+    .contenedor-card {
+        gap: 15px;
+        padding: 15px 10px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .tituloTareas {
+        padding: 10px 5px 0 5px;
+        font-size: 1.5rem;
+    }
+    
+    .contenedor-card {
+        gap: 10px;
+        padding: 10px 5px;
+    }
+}

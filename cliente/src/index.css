@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #202020;
+  color: white;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+/* Mejoras generales para dispositivos móviles */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Mejora el scroll en móviles */
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  /* Evita el zoom horizontal en móviles */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Mejoras para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+/* Mejoras para pantallas táctiles */
+@media (hover: none) and (pointer: coarse) {
+  /* Aumenta el área de toque para botones */
+  button, input[type="submit"], a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Mejora la legibilidad en pantallas pequeñas */
+  input, textarea {
+    font-size: 16px !important;
+  }
+}
