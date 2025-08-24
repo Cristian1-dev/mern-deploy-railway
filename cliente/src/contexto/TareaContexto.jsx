@@ -3,7 +3,6 @@ import {
     crearTareaRequest, getTareasRequest, deleteTareaRequest,
     getTareaRequest, updateTareaRequest
 } from "../api-peticiones/tarea.js";
-import { get, set } from "mongoose";
 
 export const TareaContexto = createContext();
 
